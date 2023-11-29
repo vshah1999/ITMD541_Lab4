@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <script src="weatherdetails.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="search">
+                <input type="text" placeholder="Enter the City Name" id="searchbar" spellcheck="false">
+                <button onclick="getGeoData()">Search</button>
+            </div>
+            <div class="weather-details">
+                <div class="city-name">
+                    <h2><span id="cityName"></span></h2>
+                </div>
+                <div class="day">
+                    <h1>Today</h1>
+                </div>
+                <div class="format-date" id="Today">
+                    <p></p>
+                </div>
+                <div class="sunrise-time">
+                    <h3>Sunrise</h3>
+                    <img src="sunrise-5.svg" class="weather-icon">
+                    <p class="time"><span id="tdsrtime"></span></p>
+                    <p class="dawn">Dawn: <span id="tddawn"></span></p>
+                </div>
+                <div class="sunset-time">
+                    <h3>Sunset</h3>
+                    <img src="sunset-5.svg" class="weather-icon">
+                    <p class="time"><span id="tdsstime"></span></p>
+                    <p class="dusk">Dusk: <span id="tddusk"></span></p>
+                </div>
+                <div class="solar-noon">
+                    <p>Solar Noon: <span id="tdsolarnoon"></span></p>
+                </div>
+                <div class="day-length">
+                    <p>Day Length: <span id="tddaylength"></span></p>
+                </div>
+                <div class="time-zone">
+                    <p>Time Zone: <span id="tdtimezone"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tomorrow card -->
+        <div class="weather-card">
+            <div class="weather-details">
+                <div class="day">
+                    <h1>Tomorrow</h1>
+                </div>
+                <div class="format-date" id="Tomorrow">
+                    <p></p>
+                </div>
+                <div class="sunrise-time">
+                    <h3>Sunrise</h3>
+                    <img src="sunrise-5.svg" class="weather-icon">
+                    <p class="time"><span id="tmrsrtime"></span></p>
+                    <p class="dawn">Dawn: <span id="tmrdawn"></span></p>
+                </div>
+                <div class="sunset-time">
+                    <h3>Sunset</h3>
+                    <img src="sunset-5.svg" class="weather-icon">
+                    <p class="time"><span id="tmrsstime"></span></p>
+                    <p class="dusk">Dusk: <span id="tmrdusk"></span></p>
+                </div>
+                <div class="solar-noon">
+                    <p>Solar Noon: <span id="tmrsolarnoon"></span></p>
+                </div>
+                <div class="day-length">
+                    <p>Day Length: <span id="tmrdaylength"></span></p>
+                </div>
+                <div class="time-zone">
+                    <p>Time Zone: <span id="tmrtimezone"></span></p>
+                </div>
+                <div class="credits">
+                    <p>Powered by <a href="https://sunrisesunset.io/api/" target="_blank">SunriseSunset.io API</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
